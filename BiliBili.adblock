@@ -74,7 +74,6 @@ hostname = -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.
 # ～ BiliBili_哔哩哔哩_屏蔽首页右上活动@ddgksf2013
 ^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity url script-response-body https://rules-for-qx.sveir.xyz/Scripts/AdBlock/Bilibili/BiliBili.min.js
 # ～ BiliBili_哔哩哔哩_热搜发现@ddgksf2013
-^https://app.bilibili.com/x/v2/search/square url script-response-body https://rules-for-qx.sveir.xyz/Scripts/AdBlock/Bilibili/BiliBili.min.js
 
 
 # ======= BiliProto 处理 ======= #
