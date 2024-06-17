@@ -57,9 +57,6 @@ hostname = -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.
 ^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine url script-response-body https://rules-for-qx.sveir.xyz/Scripts/AdBlock/BiliBili/BiliBili.min.js
 # ～ BiliBili_哔哩哔哩_屏蔽首页右上活动@ddgksf2013
 ^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity url script-response-body https://rules-for-qx.sveir.xyz/Scripts/AdBlock/BiliBili/BiliBili.min.js
-# ～ BiliBili_哔哩哔哩_热搜发现@ddgksf2013
-#^https://app.bilibili.com/x/v2/search/square url script-response-body https://rules-for-qx.sveir.xyz/Scripts/AdBlock/BiliBili/BiliBili.min.js
-
 
 # ======= BiliProto 处理 ======= #
 # ～ BiliBili_哔哩哔哩_屏蔽DefaultWord@ddgksf2013
@@ -82,7 +79,9 @@ hostname = -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.
 # ～ BiliBili_哔哩哔哩_繁体CC字幕转中文简体[自行启用hostname=aisubtitle.hdslb.com,i0.hdslb.com]@ddgksf2013
 ;^https?:\/\/.*\.hdslb\.com\/bfs\/subtitle\/.+\.json url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/bilibili_cc.js
 # ～ BiliBili_哔哩哔哩_去除统一设置的皮肤[注释留存]@ddgksf2013
-;^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/skin\? url script-response-body https://rules-for-qx.sveir.xyz/Scripts/AdBlock/BiliBili/BiliBili.min.js#网易云广告
+;^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/skin\? url script-response-body https://rules-for-qx.sveir.xyz/Scripts/AdBlock/BiliBili/
+BiliBili.min.js#网易云广告
+
 #hostname=m.ads.8le8le.com,iadmusicmat.music.com
 ^https?:\/\/iadmusicmat\.music\.126\.net\/.+\.jpg url reject
 ^http:\/\/interface\.music\.163\.com\/eapi\/ad\/config\/get url reject
@@ -243,4 +242,4 @@ var obj=JSON.parse($request.body),ddgksf2013={};"0007"==obj.placementNo?(ddgksf2
 ^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) url script-response-body https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_launch.js
 
 [mitm]
-hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, ad.12306.cn, mp.weixin.qq.com, broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.net, app.bilibili.com, api.live.bilibili.com, *.bilibili.com, *.bilibili.*, grpc.biliapi.net, *biliapi.net, 118.89.204.198,103.41.167.237, 2402:4e00:1200:ed00:0:9089:6dac:96b6, www.zhihu.com,api.zhihu.com, zhuanlan.zhihu.com, appcloud2.zhihu.com, m-cloud.zhihu.com, 103.41.167.236, 103.41.167.234, 103.41.167.235, 103.41.167.226, m.ads.8le8le.com
+hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, ad.12306.cn, mp.weixin.qq.com, -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.net, app.bilibili.com, api.live.bilibili.com, *.bilibili.com, *.bili*.*, *.bilibili.*, grpc.biliapi.net,*biliapi.net, 118.89.204.198,103.41.167.237, 2402:4e00:1200:ed00:0:9089:6dac:96b6, www.zhihu.com,api.zhihu.com, zhuanlan.zhihu.com, appcloud2.zhihu.com, m-cloud.zhihu.com, 103.41.167.236, 103.41.167.234, 103.41.167.235, 103.41.167.226, m.ads.8le8le.com
