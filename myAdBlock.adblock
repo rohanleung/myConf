@@ -34,7 +34,7 @@ hostname = -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.
 
 # ======= BiliJson 高码率仅粉色旧版[V7.65] ======= #
 # ～ BiliBili_哔哩哔哩_1080P高码率+4K画质[番剧和影视除外]@ddgksf2013
-^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\? url script-response-body https://rules-for-qx.sveir.xyz/Scripts/AdBlock/BiliBili/BiliBili.min.js
+#^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\? url script-response-body https://rules-for-qx.sveir.xyz/Scripts/AdBlock/BiliBili/BiliBili.min.js
 
 
 # ======= BiliJson Tab页处理 ======= #
@@ -58,7 +58,7 @@ hostname = -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.
 # ～ BiliBili_哔哩哔哩_屏蔽首页右上活动@ddgksf2013
 ^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity url script-response-body https://rules-for-qx.sveir.xyz/Scripts/AdBlock/BiliBili/BiliBili.min.js
 # ～ BiliBili_哔哩哔哩_热搜发现@ddgksf2013
-^https://app.bilibili.com/x/v2/search/square url script-response-body https://rules-for-qx.sveir.xyz/Scripts/AdBlock/BiliBili/BiliBili.min.js
+#^https://app.bilibili.com/x/v2/search/square url script-response-body https://rules-for-qx.sveir.xyz/Scripts/AdBlock/BiliBili/BiliBili.min.js
 
 
 # ======= BiliProto 处理 ======= #
